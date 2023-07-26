@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <section className="section">
-      <h2>HomePage</h2>
+      <h2>Home</h2>
     </section>
   );
 };

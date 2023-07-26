@@ -5,25 +5,13 @@ import Products from "./pages/Products";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Error from "./pages/Error";
+import Nav from "./pages/Nav";
 
 const App = () => {
   return (
     <>
       <nav>
-        <ul>
-          <li>
-            <Link to="about">AboutUs</Link>
-          </li>
-          <li>
-            <Link to="dashboard">Dashboard </Link>
-          </li>
-          <li>
-            <Link to="login">Login</Link>
-          </li>
-          <li>
-            <Link to="products">Products</Link>
-          </li>
-        </ul>
+        <Nav />
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -33,7 +21,9 @@ const App = () => {
         <Route path="login" element={<Login />} />
         <Route path="*" element={<Error />} />
       </Routes>
-      <footer>Our Footer</footer>
+      <footer>
+        <Nav />
+      </footer>
     </>
   );
 };
