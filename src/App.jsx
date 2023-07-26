@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
@@ -8,7 +8,7 @@ import Error from "./pages/Error";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <>
       <nav>
         <ul>
           <li>
@@ -34,7 +34,7 @@ const App = () => {
         <Route path="*" element={<Error />} />
       </Routes>
       <footer>Our Footer</footer>
-    </BrowserRouter>
+    </>
   );
 };
 
