@@ -27,6 +27,22 @@ const Nav = () => {
           Products
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="login"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
+          Login
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="dashboard"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
+          DashBoard
+        </NavLink>
+      </li>
     </ul>
   );
 };
