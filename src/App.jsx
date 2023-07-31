@@ -10,21 +10,17 @@ import Nav from "./pages/Nav";
 const App = () => {
   return (
     <>
-      <nav>
-        <Nav />
-      </nav>
+      <nav></nav>
       <Routes>
         <Route path="/" element={<Home />}>
           <Route path="products" element={<Products />} />
           <Route path="about" element={<About />} />
-          <Route path="*" element={<Error />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="login" element={<Login />} />
         </Route>
+        <Route path="*" element={<Error />} />
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="login" element={<Login />} />
       </Routes>
-      <footer>
-        <Nav />
-      </footer>
+      <footer></footer>
     </>
   );
 };
