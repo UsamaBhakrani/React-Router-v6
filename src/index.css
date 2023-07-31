@@ -286,7 +286,7 @@ li {
 }
 
 .active {
-  color: var(--primary-500);
+  color: coral;
 }
 .products article {
   margin-bottom: 1rem;

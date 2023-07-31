@@ -4,13 +4,28 @@ const Nav = () => {
   return (
     <ul>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="about">AboutUs</NavLink>
+        <NavLink
+          to="about"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
+          AboutUs
+        </NavLink>
       </li>
       <li>
-        <NavLink to="products">Products</NavLink>
+        <NavLink
+          to="products"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
+          Products
+        </NavLink>
       </li>
     </ul>
   );
